@@ -1,5 +1,5 @@
 # Vengeance
-### A problem that inspired me to take up coding, a problem which I was not solve then. Implemented in all programming languages I learn. 
+### A problem that inspired me to take up coding, a problem which I was not able to solve then. Implemented in all programming languages that I will learn. 
 
 
 The problem goes something like this:
