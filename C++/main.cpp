@@ -19,9 +19,9 @@ int eval(std::string expr)
             result -= number;
         number = 0;
     };
-    for (iter; iter < expr.end(); iter++)
+    for(auto iter : expr)
     {
-        switch (*iter)
+        switch (iter)
         {
         case 'B':
             numberAdd();
@@ -35,7 +35,7 @@ int eval(std::string expr)
             number *= 10;
             break;
         default:
-            number += *iter - '0';
+            number += iter - '0';
             break;
         }
     }
@@ -45,10 +45,9 @@ int eval(std::string expr)
 
 void print_expr(std::string expr)
 {
-    std::string::iterator iter = expr.begin();
-    for (iter; iter < expr.end(); iter++)
+    for(auto iter : expr)
     {
-        switch (*iter)
+        switch (iter)
         {
         case 'A':
             break;
@@ -59,7 +58,7 @@ void print_expr(std::string expr)
             std::cout << '-';
             break;
         default:
-            std::cout << *iter;
+            std::cout << iter;
             break;
         }
     }
